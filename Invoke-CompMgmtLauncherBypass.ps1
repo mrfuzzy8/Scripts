@@ -80,6 +80,6 @@ This will write out "Is Elevated: True" to C:\UACBypassTest.
 
     if(Get-Process -Id $Process.Id -ErrorAction SilentlyContinue){
         Stop-Process -Id $Process.Id
-        Write-Verboe "Killed running CompMgmtLauncher process"
+        Write-Verbose "Killed running CompMgmtLauncher process"
     }
 }
